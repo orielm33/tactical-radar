@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/tactical-radar/', // שים לב להוספה של השורה הזו
       server: {
         port: 3000,
         host: '0.0.0.0',
