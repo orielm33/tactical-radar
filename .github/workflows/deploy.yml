@@ -22,7 +22,7 @@ jobs:
       - name: Install and Build
         run: |
           cd tactical-radar-hud
-          npm install
+          npm install --no-package-lock
           npm run build
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
