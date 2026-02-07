@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Threat, SystemStatus, HFCAlert } from '../types';
 
@@ -151,7 +150,7 @@ const RadarUI: React.FC<RadarUIProps> = ({
         <div className="fixed inset-0 bg-black/95 z-[4000] pointer-events-auto flex flex-col p-6 animate-fade-in border-4 border-[#00ff00]/20">
           <div className="flex justify-between items-center border-b border-[#00ff00] pb-4 mb-4">
             <div className="flex flex-col">
-              <span className="text-2xl font-black tracking-widest text-[#00ff00]">>>> VERIFIED_HISTORY</span>
+              <span className="text-2xl font-black tracking-widest text-[#00ff00]">{" >>> "} VERIFIED_HISTORY</span>
               <span className="text-[10px] opacity-60">SOURCED FROM HOME FRONT COMMAND (PIKUD HAOREF)</span>
             </div>
             <div className="flex gap-2">
@@ -194,7 +193,7 @@ const RadarUI: React.FC<RadarUIProps> = ({
       {intelReport && (
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[94%] max-w-md bg-black/95 border-2 border-[#00ff00] p-4 pointer-events-auto backdrop-blur-xl z-[2500] shadow-[0_0_40px_rgba(0,255,0,0.2)]">
           <div className="flex justify-between items-center mb-3 border-b border-[#00ff00]/50 pb-2">
-            <span className="font-bold text-lg tracking-widest animate-pulse">>>> SCAN_REPORT</span>
+            <span className="font-bold text-lg tracking-widest animate-pulse">{" >>> "} SCAN_REPORT</span>
             <button onClick={onCloseIntel} className="text-xl px-2">✕</button>
           </div>
           <div className={`text-xs leading-relaxed max-h-[30vh] overflow-y-auto custom-scrollbar pr-2 ${showTranslated ? 'text-right font-sans' : 'font-mono'}`} dir={showTranslated ? 'rtl' : 'ltr'}>
