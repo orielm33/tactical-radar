@@ -1,0 +1,7 @@
+{
+  "name": "Tactical Radar HUD",
+  "description": "A high-precision tactical radar interface featuring live geolocation tracking, compass-synced map rotation, and distance monitoring to predefined regional points of interest.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
